@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моніторинг криптовалют</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📈 Моніторинг криптовалют</h1>
+        <label for="crypto">Оберіть криптовалюту:</label>
+        <select id="crypto">
+            <option value="bitcoin">Bitcoin (BTC)</option>
+            <option value="ethereum">Ethereum (ETH)</option>
+            <option value="dogecoin">Dogecoin (DOGE)</option>
+        </select>
+        <button onclick="fetchCryptoPrice()">🔍 Оновити</button>
+        <p id="price">💰 Ціна: --</p>
+        <canvas id="priceChart"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
